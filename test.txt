@@ -1,0 +1,4 @@
+from ultralytics import YOLO 
+
+model = YOLO("exports/helmet_detection.pt")
+model.predict(source="test/test_1.jpeg",show=Tru, save=True, conf = 0.5)
